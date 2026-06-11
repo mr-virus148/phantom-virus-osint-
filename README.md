@@ -47,3 +47,6 @@ pkg install python
 
 # Install Python dependencies
 pip install requests python-whois dnspython phonenumbers                                                                                     
+git clone https://github.com/mr-virus148/phantom-virus-osint-.git
+cd phantom-virus-osint-
+python osintV6.py

@@ -49,8 +49,8 @@ def banner():
     print("""
 ╔════════════════════════════╗
 👻 PHANTOM VIRUS OSINT ELITE v7
-🧠 FULL INTELLIGENCE SUITE
-🇹🇿 EDUCATIONAL CYBER TOOL
+🧠 CREATED BY MR.VIRUS HACKER
+🇹🇿 TANZANIA CYBER OSINT TOOL
 ╚════════════════════════════╝
 """)
 

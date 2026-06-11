@@ -1,68 +1,49 @@
-🧠 Overview / Maelezo
+# 👻 PHANTOM VIRUS OSINT ELITE
 
-ENGLISH:
-PHANTOM VIRUS OSINT is a Python-based Open Source Intelligence (OSINT) tool designed to gather and analyze publicly available information about IP addresses, domains, and network infrastructure.
+**OSINT Reconnaissance Tool** — Python-based Open Source Intelligence tool for gathering digital footprint data on IP addresses, domains, phone numbers, and network infrastructure.
 
-It performs passive reconnaissance to extract digital footprint data quickly and efficiently.
+---
 
-KISWAHILI:
-PHANTOM VIRUS OSINT ni tool ya Python ya Open Source Intelligence (OSINT) inayotumika kuchambua taarifa za wazi kuhusu IP addresses, domains, na network infrastructure.
+## 🧠 Overview / Maelezo ya Jumla
 
-Inafanya uchunguzi wa kimya (passive reconnaissance) bila kuingilia mifumo.
+**ENGLISH:**  
+PHANTOM VIRUS OSINT ELITE is a powerful, production-ready OSINT tool written in Python 3. It performs **passive reconnaissance** to collect publicly available information without directly interacting with target systems. It supports IP geolocation, WHOIS lookups, DNS enumeration, reverse DNS, subdomain discovery via crt.sh, HTTP header analysis, ping checks, phone number OSINT, and simulated social media footprint analysis.
 
-⚡ Features / Vipengele
-🌐 IP Geolocation Lookup (ISP, Country, City)
-🔎 WHOIS Domain Information
-📡 DNS Records Scanner (A, MX, NS, TXT)
-🔁 Reverse DNS Lookup
-🛰️ Subdomain Enumeration (Passive)
-🧾 HTTP Header Analysis
-📡 Ping Network Check
-💾 Auto JSON Report Generation
-🎯 Purpose / Lengo
+**KISWAHILI:**  
+PHANTOM VIRUS OSINT ELITE ni tool ya kisasa ya OSINT iliyoandikwa kwa Python 3. Inafanya **uchunguzi wa kimya (passive reconnaissance)** kukusanya taarifa za wazi bila kugusa moja kwa moja mifumo inayolengwa. Inaauni kutafuta eneo la IP, taarifa za WHOIS, kukagua DNS, reverse DNS, kutafuta subdomains kupitia crt.sh, kuchambua HTTP headers, kupima ping, OSINT ya namba za simu, na uchambuzi wa mitandao ya kijamii (simulated).
 
-ENGLISH:
-This tool is designed for cybersecurity learning, OSINT research, and ethical network analysis.
+---
 
-KISWAHILI:
-Tool hii imetengenezwa kwa ajili ya kujifunza cybersecurity, utafiti wa OSINT, na uchambuzi wa mitandao kwa njia ya kisheria.
+## ✨ Features / Vipengele
 
-⚙️ Installation / Usakinishaji
+| Feature | Description |
+|---------|-------------|
+| 🌐 **IP Geolocation** | Country, city, ISP, coordinates, Google Maps link |
+| 🔎 **WHOIS Lookup** | Domain registration details, registrar, dates |
+| 📡 **DNS Records** | A, AAAA, MX, NS, TXT, CNAME records |
+| 🔁 **Reverse DNS** | PTR record lookup |
+| 🛰️ **Subdomain Enumeration** | Passive enumeration via crt.sh (Certificate Transparency) |
+| 🧾 **HTTP Headers** | Security headers, server info, response analysis |
+| 📶 **Ping Check** | Network reachability test |
+| 📱 **Phone OSINT** | Country, carrier, region, timezone, Google Maps coordinates |
+| 👥 **Social OSINT** | Simulated WhatsApp / Telegram / Signal presence check |
+| 💾 **Auto JSON Reports** | All results automatically saved to `osint_reports/` |
+
+---
+
+## 📦 Installation / Usakinishaji
+
+### Requirements
+
+- Python 3.8+
+- pip (Python package manager)
+
+### Quick Install
+
+```bash
+# Update packages (Termux users)
 pkg update && pkg upgrade
 pkg install python
-pip install requests python-whois dnspython
 
-Clone repository:
-
-git clone https://github.com/yourusername/phantom-virus-osint
-cd phantom-virus-osint
-
-Run tool:
-
-python tool.py
-🚀 Usage / Matumizi
-python tool.py ip 8.8.8.8
-python tool.py whois google.com
-python tool.py dns google.com
-python tool.py reverse 8.8.8.8
-python tool.py headers google.com
-python tool.py ping 8.8.8.8
-python tool.py sub google.com
-📦 Example Output
-🌐 IP INFO
-IP: 8.8.8.8
-Country: United States
-ISP: Google LLC
-City: Mountain View
-⚠️ Disclaimer / Onyo
-
-ENGLISH:
-This tool is for educational and ethical cybersecurity purposes only. Any misuse is strictly prohibited.
-
-KISWAHILI:
-Tool hii ni kwa elimu na utafiti wa cybersecurity pekee. Matumizi mabaya hayaruhusiwi.
-
-👤 Author
-Mr.virus hacker from  🇹🇿
- tested on                                                                                                                       . kali linux 
-       . Termux                                                                                                                   . window
+# Install Python dependencies
+pip install requests python-whois dnspython phonenumbers                                                                                     
